@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traceable-pdf-rag"
+version = "0.1.0"
+description = "Portable, citation-first RAG chatbot for large PDF corpora"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "docling>=2.116,<2.124",
+  "groq>=0.31,<1",
+  "langdetect==1.0.9",
+  "numpy>=2.1,<3",
+  "pydantic>=2.10,<3",
+  "pypdf>=5.1,<7",
+  "python-dotenv>=1.0,<2",
+  "PyYAML>=6.0,<7",
+  "qdrant-client==1.19.1",
+  "requests>=2.32,<3",
+  "sentence-transformers>=5.1,<6",
+  "streamlit>=1.42,<2",
+  "tiktoken>=0.8,<1",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab>=4.3,<5", "matplotlib>=3.9,<4", "pandas>=2.2,<3"]
+dev = ["pytest>=8.3,<9", "pytest-cov>=6,<8", "ruff>=0.9,<1"]
+
+[project.scripts]
+rag-ingest = "rag_app.ingestion:main"
+rag-evaluate = "rag_app.evaluation:main"
+rag-snapshot = "rag_app.snapshot:main"
+rag-transfer = "rag_app.transfer:main"
+rag-models = "rag_app.prepare_models:main"
+
+[tool.setuptools.packages.find]
+include = ["rag_app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+  "integration: requires Qdrant or heavyweight document/model dependencies",
+  "live: requires a live Groq API key",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

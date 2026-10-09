@@ -1,0 +1,65 @@
+version: 1
+source: "Intergovernmental Panel on Climate Change (IPCC)"
+license_note: "Downloaded from official IPCC sites for evaluation; review IPCC reuse terms."
+documents:
+  - id: sr15
+    title: "Global Warming of 1.5°C"
+    filename: "IPCC_SR15_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/sites/2/2022/06/SR15_Full_Report_HR.pdf"
+    min_pages: 200
+    sha256: null
+  - id: srccl
+    title: "Climate Change and Land"
+    filename: "IPCC_SRCCL_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/sites/4/2022/11/SRCCL_Full_Report.pdf"
+    min_pages: 200
+    sha256: null
+  - id: srocc
+    title: "The Ocean and Cryosphere in a Changing Climate"
+    filename: "IPCC_SROCC_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/sites/3/2022/03/SROCC_FullReport_FINAL.pdf"
+    min_pages: 200
+    sha256: null
+  - id: srex
+    title: "Managing the Risks of Extreme Events and Disasters"
+    filename: "IPCC_SREX_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/03/SREX_Full_Report-1.pdf"
+    min_pages: 200
+    sha256: null
+  - id: srren
+    title: "Renewable Energy Sources and Climate Change Mitigation"
+    filename: "IPCC_SRREN_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/03/SRREN_Full_Report-1.pdf"
+    min_pages: 200
+    sha256: null
+  - id: srccs
+    title: "Carbon Dioxide Capture and Storage"
+    filename: "IPCC_SRCCS_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/03/srccs_wholereport-1.pdf"
+    min_pages: 200
+    sha256: null
+  - id: sres
+    title: "Special Report on Emissions Scenarios"
+    filename: "IPCC_SRES_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/03/emissions_scenarios-1.pdf"
+    min_pages: 200
+    sha256: null
+  - id: ccw
+    title: "Climate Change and Water"
+    filename: "IPCC_Climate_Change_and_Water.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/03/climate-change-water-en.pdf"
+    min_pages: 200
+    sha256: null
+  - id: gpg_lulucf
+    title: "Good Practice Guidance for Land Use, Land-Use Change and Forestry"
+    filename: "IPCC_GPG_LULUCF.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/03/GPG_LULUCF_FULLEN.pdf"
+    min_pages: 200
+    sha256: null
+  - id: ar4_wg1
+    title: "Climate Change 2007: The Physical Science Basis"
+    filename: "IPCC_AR4_WG1_Full_Report.pdf"
+    url: "https://www.ipcc.ch/site/assets/uploads/2018/05/ar4_wg1_full_report-1.pdf"
+    min_pages: 200
+    sha256: null
+

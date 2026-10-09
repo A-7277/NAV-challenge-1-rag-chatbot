@@ -1,0 +1,93 @@
+[
+  {
+    "id": "q01",
+    "question": "What impacts are projected when global warming reaches 1.5 degrees Celsius?",
+    "expected_filenames": ["IPCC_SR15_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q02",
+    "question": "How does climate change affect food security and land degradation?",
+    "expected_filenames": ["IPCC_SRCCL_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q03",
+    "question": "What risks does sea-level rise create for low-lying coastal communities?",
+    "expected_filenames": ["IPCC_SROCC_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q04",
+    "question": "How can disaster risk management support adaptation to climate extremes?",
+    "expected_filenames": ["IPCC_SREX_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q05",
+    "question": "What role can renewable energy play in climate change mitigation?",
+    "expected_filenames": ["IPCC_SRREN_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q06",
+    "question": "What are the major stages of carbon dioxide capture and geological storage?",
+    "expected_filenames": ["IPCC_SRCCS_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q07",
+    "question": "Why are emissions scenarios used in climate assessment?",
+    "expected_filenames": ["IPCC_SRES_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q08",
+    "question": "How is the global water cycle expected to respond to climate change?",
+    "expected_filenames": ["IPCC_Climate_Change_and_Water.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q09",
+    "question": "What practices improve greenhouse gas inventories for land-use change and forestry?",
+    "expected_filenames": ["IPCC_GPG_LULUCF.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q10",
+    "question": "What evidence supports warming of the climate system?",
+    "expected_filenames": ["IPCC_AR4_WG1_Full_Report.pdf"],
+    "answerable": true
+  },
+  {
+    "id": "q11",
+    "question": "What is the warranty period of the iPhone 20?",
+    "expected_filenames": [],
+    "answerable": false
+  },
+  {
+    "id": "q12",
+    "question": "Who won the 2034 FIFA World Cup final?",
+    "expected_filenames": [],
+    "answerable": false
+  },
+  {
+    "id": "q13",
+    "question": "Give me the employee password policy for NavGurukul.",
+    "expected_filenames": [],
+    "answerable": false
+  },
+  {
+    "id": "q14",
+    "question": "What dosage of antibiotics should I personally take tomorrow?",
+    "expected_filenames": [],
+    "answerable": false
+  },
+  {
+    "id": "q15",
+    "question": "What was today's closing price of an unspecified stock?",
+    "expected_filenames": [],
+    "answerable": false
+  }
+]
+

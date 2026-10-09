@@ -1,0 +1,49 @@
+name: traceable-pdf-rag
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.19.1
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD", "bash", "-c", "</dev/tcp/127.0.0.1/6333"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  app:
+    build: .
+    env_file: .env
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/workspace
+      - ./data:/workspace/data
+      - ./artifacts:/workspace/artifacts
+      - ./models:/workspace/models
+    depends_on:
+      qdrant:
+        condition: service_healthy
+
+  notebook:
+    profiles: ["notebook"]
+    build: .
+    env_file: .env
+    command: >-
+      jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
+      --ServerApp.token='' --ServerApp.password=''
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/workspace
+      - ./data:/workspace/data
+      - ./artifacts:/workspace/artifacts
+      - ./models:/workspace/models
+    depends_on:
+      qdrant:
+        condition: service_healthy
+
+volumes:
+  qdrant_data:
